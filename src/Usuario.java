@@ -6,7 +6,7 @@ public class Usuario {
     private int edad;
     private String DNI;
 
-    // Constructor 
+    // Constructor de clase
     public Usuario() {
         nombre = "";
         edad = 0;
@@ -27,14 +27,12 @@ public class Usuario {
         return this.DNI;
     }
 
-    //
     public boolean setDNI(String DNI) {
         this.DNI = DNI;
 
         /*
-         comprobamos los caracteres del dni introducido 
-         si los primeros 8 son numeros y el ultimo es 
-         una letra entonces el DNI sera valido(true).
+         Hacemos uso de expresiones regulares, para 
+         comprobar la validez del DNI introducido.
          */
 
         if (DNI.matches("^[0-9]{8}[a-zA-Z]$")
@@ -57,10 +55,7 @@ public class Usuario {
         this.edad = edad;
     }
     
-    /*
-    Sobreescribimos el metodo toString para mostrar 
-    por pantalla los datos del usuario.
-     */
+    // Sobreescribimos la funcion toString
     @Override
     public String toString() {
 

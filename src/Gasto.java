@@ -9,12 +9,10 @@ public class Gasto extends Dinero {
         this.description = description;
     }
 
+    // Sobreescribimos la funcion toString
     @Override
     public String toString() {
-        /* 
-        Sobreescribimos el metodo toString para imprimir 
-        los parametros instroducidos en el constructor.
-        */
+
         return "Gasto en concepto de " + this.description + 
         ".importe total: " + this.dinero;
     }

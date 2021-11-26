@@ -1,7 +1,6 @@
 /* La clase dinero al ser abstracta 
 no se crearan instancias en otras clases del él,
- La clase Gasto e Ingreso heredan de esta,
- lac cual recibe dos parametros en su constructor.*/
+ La clase Gasto e Ingreso heredan de ella.*/
 public abstract class Dinero {
 
     protected double dinero;
